@@ -34,6 +34,7 @@ qen_indices = [14, 38, 40, 50, 51, 59, 102, 103, 104, 105, 114, 119, 123, 124, 1
 
 boroughs = [mht_indices, brx_indices, brk_indices, sti_indices, qen_indices]
 sizes = [111, 135, 243, 28, 65]
+all_samples = []
 for borough in boroughs:
     sle = sample(borough, sizes[boroughs.index(borough)])
-    print(sle)
+    all_samples.append(sle)
